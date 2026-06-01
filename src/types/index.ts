@@ -7,6 +7,8 @@ export interface Section {
   content?: string
   showButton?: boolean
   buttonText?: string
+  backgroundImage?: string
+  customContent?: (isActive: boolean) => ReactNode
 }
 
 export interface SectionProps extends Section {
